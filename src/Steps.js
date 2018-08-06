@@ -89,7 +89,7 @@ class Steps extends Component{
                     break;
 
                 case "input":
-                    resultArr.push((<div><br/></div>))
+                    resultArr.push((<div><br/></div>));
                     let inputType = currentElement.characterstics.type;
                     switch (inputType) {
                         case "text":
