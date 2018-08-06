@@ -1,7 +1,5 @@
-### For reference to how the  JSON data is accepted
-	**-[JSON Generator Reference](https://gist.github.com/garvitdelhi/9abbfb64341ed82317b028278e9827c0#file-payload_generator-js)**
-
-
+# For reference to how the  JSON data is accepted
+**[JSON Generator Reference](https://gist.github.com/garvitdelhi/9abbfb64341ed82317b028278e9827c0#file-payload_generator-js)**
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
