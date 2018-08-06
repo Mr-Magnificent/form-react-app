@@ -1,18 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import './App.css';
+import Steps from './Steps';
 
 class App extends Component {
+    /*
+    * props is an object that contains the properties sent to */
+    constructor(props) {
+        super(props);
+
+    }
+
+
   render() {
+      const {data = {}} = this.props;
+      const {title = "", steps = []} = data;
+      // console.log("hello", data);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+          <AppBar position="static" color="secondary">
+              <Toolbar>
+                <Typography variant={"title"}>
+                  {title}
+                </Typography>
+              </Toolbar>
+          </AppBar>
+          <Steps data={steps}/>
       </div>
     );
   }
